@@ -176,6 +176,20 @@
             android:backgroundTint="#1D4ED8"
             android:layout_marginTop="20dp"/>
 
-    </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ya tengo cuenta → "
+            android:textColor="#111827"
+            android:textSize="16sp" />
 
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iniciar sesión"
+            android:textColor="#1D4ED8"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+    </LinearLayout>
 </ScrollView>

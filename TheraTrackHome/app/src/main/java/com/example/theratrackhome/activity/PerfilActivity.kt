@@ -1,9 +1,10 @@
-package com.example.theratrackhome
+package com.example.theratrackhome.activity
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.example.theratrackhome.R
 
 class PerfilActivity : AppCompatActivity() {
 

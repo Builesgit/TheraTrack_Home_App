@@ -19,7 +19,7 @@
                 android:id="@+id/iconMedical"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@drawable/ic_medical"
+                android:src="@drawable/ic_medical_cross"
                 android:padding="8dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>

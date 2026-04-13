@@ -13,27 +13,38 @@
         android:theme="@style/Theme.TheraTrackHome">
 
         <activity
-            android:name=".SplashActivity"
+            android:name=".activity.SplashActivity"
             android:exported="true">
-
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
 
         <activity
-            android:name=".PerfilActivity"
-            android:exported="false"/>
+            android:name=".activity.MainActivity"
+            android:exported="false" />
 
         <activity
-            android:name=".LoginActivity"
-            android:exported="false"/>
+            android:name=".activity.PerfilActivity"
+            android:exported="false" />
 
         <activity
-            android:name=".RegisterActivity"
-            android:exported="false"/>
+            android:name=".activity.LoginActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.PrepararMonitorizacionActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.ConexionDispositivoActivity"
+            android:exported="false" />
+
 
     </application>
 
