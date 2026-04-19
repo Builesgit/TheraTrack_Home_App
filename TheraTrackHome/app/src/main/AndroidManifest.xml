@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -45,6 +47,62 @@
             android:name=".activity.ConexionDispositivoActivity"
             android:exported="false" />
 
+
+        <activity
+            android:name=".DashboardPacienteActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".LoginHospitalActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".DashboardHospitalActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".HistorialActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".RegistroDiarioActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".PerfilPacienteActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".ConfirmacionSintomasActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".AlertasActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".AsistenciaActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".PacientesHospitalActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".DetallePacienteActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".AlertasHospitalActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".InformesHospitalActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".AjustesHospitalActivity"
+            android:exported="false"/>
 
     </application>
 
