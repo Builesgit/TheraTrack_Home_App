@@ -12,9 +12,14 @@ class PerfilActivity : AppCompatActivity() {
         setContentView(R.layout.activity_perfil)
 
         val btnPaciente = findViewById<Button>(R.id.btnPaciente)
+        val btnHospital = findViewById<Button>(R.id.btnHospital)
 
         btnPaciente.setOnClickListener {
             startActivity(Intent(this, LoginActivity::class.java))
+        }
+
+        btnHospital.setOnClickListener {
+            startActivity(Intent(this, LoginHospitalActivity::class.java))
         }
     }
 }

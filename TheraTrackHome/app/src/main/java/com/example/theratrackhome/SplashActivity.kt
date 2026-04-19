@@ -2,22 +2,38 @@ package com.example.theratrackhome
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
+import com.example.theratrackhome.controller.AuthController
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 class SplashActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         setContentView(R.layout.activity_splash)
 
-        Handler(Looper.getMainLooper()).postDelayed({
+        lifecycleScope.launch {
+            delay(2000)
 
-            startActivity(Intent(this, PerfilActivity::class.java))
+            if (AuthController.sesionActiva()) {
+                AuthController.obtenerRolActual()
+                    .onSuccess { rol ->
+                        val destino = if (rol == "profesional") {
+                            DashboardHospitalActivity::class.java
+                        } else {
+                            DashboardPacienteActivity::class.java
+                        }
+                        startActivity(Intent(this@SplashActivity, destino))
+                    }
+                    .onFailure {
+                        startActivity(Intent(this@SplashActivity, PerfilActivity::class.java))
+                    }
+            } else {
+                startActivity(Intent(this@SplashActivity, PerfilActivity::class.java))
+            }
             finish()
-
-        }, 5000)
+        }
     }
 }
