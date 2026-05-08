@@ -44,7 +44,11 @@
                         android:layout_height="22dp"
                         android:src="@drawable/ic_nav_profile"
                         android:layout_gravity="center"
+<<<<<<< HEAD
                         app:tint="@color/white"/>
+=======
+                        android:tint="@color/white"/>
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
                 </FrameLayout>
 
                 <!-- Título + puntos de estado (centrado) -->
@@ -92,7 +96,11 @@
                     android:layout_width="26dp"
                     android:layout_height="26dp"
                     android:src="@drawable/ic_bell"
+<<<<<<< HEAD
                     app:tint="@color/colorTextSecondary"
+=======
+                    android:tint="@color/colorTextSecondary"
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
                     android:layout_centerVertical="true"
                     android:layout_alignParentEnd="true"/>
 
@@ -301,7 +309,11 @@
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:src="@drawable/ic_drop"
+<<<<<<< HEAD
                             app:tint="@color/colorPrimary"
+=======
+                            android:tint="@color/colorPrimary"
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
                             android:layout_gravity="center"/>
                     </FrameLayout>
 
@@ -333,7 +345,11 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:src="@drawable/ic_arrow_right"
+<<<<<<< HEAD
                         app:tint="@color/colorTextSecondary"
+=======
+                        android:tint="@color/colorTextSecondary"
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
                         android:layout_marginStart="8dp"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -365,7 +381,11 @@
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:src="@drawable/ic_people"
+<<<<<<< HEAD
                             app:tint="@color/colorOrangeCaution"
+=======
+                            android:tint="@color/colorOrangeCaution"
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
                             android:layout_gravity="center"/>
                     </FrameLayout>
 
@@ -397,7 +417,11 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:src="@drawable/ic_arrow_right"
+<<<<<<< HEAD
                         app:tint="@color/colorTextSecondary"
+=======
+                        android:tint="@color/colorTextSecondary"
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
                         android:layout_marginStart="8dp"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -429,7 +453,11 @@
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:src="@drawable/ic_wind"
+<<<<<<< HEAD
                             app:tint="@color/colorGreenSafe"
+=======
+                            android:tint="@color/colorGreenSafe"
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
                             android:layout_gravity="center"/>
                     </FrameLayout>
 
@@ -461,7 +489,11 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:src="@drawable/ic_arrow_right"
+<<<<<<< HEAD
                         app:tint="@color/colorTextSecondary"
+=======
+                        android:tint="@color/colorTextSecondary"
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
                         android:layout_marginStart="8dp"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>

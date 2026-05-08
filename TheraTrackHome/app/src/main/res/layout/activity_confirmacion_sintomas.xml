@@ -125,7 +125,11 @@
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:src="@drawable/ic_bar_chart"
+<<<<<<< HEAD
                             app:tint="@color/colorPrimary"
+=======
+                            android:tint="@color/colorPrimary"
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
                             android:layout_gravity="center"/>
                     </FrameLayout>
 

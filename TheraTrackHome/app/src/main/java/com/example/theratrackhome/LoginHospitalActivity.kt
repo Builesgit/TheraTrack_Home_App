@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.EditText
 import android.widget.ImageView
+<<<<<<< HEAD
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
@@ -11,6 +12,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.example.theratrackhome.controller.AuthController
 import com.example.theratrackhome.util.IdentificadorUtils
+=======
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
+import com.example.theratrackhome.controller.AuthController
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.textfield.TextInputEditText
 import kotlinx.coroutines.launch
@@ -21,6 +28,7 @@ class LoginHospitalActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login_hospital)
 
+<<<<<<< HEAD
         val btnBack             = findViewById<ImageView>(R.id.btnBack)
         val etColegiadoOEmail   = findViewById<EditText>(R.id.etEmail)
         val etPin               = findViewById<TextInputEditText>(R.id.etPassword)
@@ -56,6 +64,33 @@ class LoginHospitalActivity : AppCompatActivity() {
                             .onSuccess { rol ->
                                 if (rol == "profesional") {
                                     startActivity(Intent(this@LoginHospitalActivity, HospitalMainActivity::class.java))
+=======
+        val btnBack    = findViewById<ImageView>(R.id.btnBack)
+        val etEmail    = findViewById<EditText>(R.id.etEmail)
+        val etPassword = findViewById<TextInputEditText>(R.id.etPassword)
+        val btnLogin   = findViewById<MaterialButton>(R.id.btnLogin)
+
+        btnBack.setOnClickListener { finish() }
+
+        btnLogin.setOnClickListener {
+            val email    = etEmail.text.toString().trim()
+            val password = etPassword.text.toString()
+
+            if (email.isEmpty() || password.isEmpty()) {
+                Toast.makeText(this, "Introduce email y contraseña", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            btnLogin.isEnabled = false
+            lifecycleScope.launch {
+                AuthController.login(email, password)
+                    .onSuccess {
+                        // Verificar que el usuario es profesional
+                        AuthController.obtenerRolActual()
+                            .onSuccess { rol ->
+                                if (rol == "profesional") {
+                                    startActivity(Intent(this@LoginHospitalActivity, DashboardHospitalActivity::class.java))
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
                                     finish()
                                 } else {
                                     AuthController.logout()
@@ -73,6 +108,7 @@ class LoginHospitalActivity : AppCompatActivity() {
                             }
                     }
                     .onFailure { e ->
+<<<<<<< HEAD
                         when (e) {
                             is AuthController.CuentaPendienteException -> {
                                 startActivity(Intent(this@LoginHospitalActivity, EsperaAprobacionActivity::class.java))
@@ -87,10 +123,19 @@ class LoginHospitalActivity : AppCompatActivity() {
                                 btnLogin.isEnabled = true
                             }
                         }
+=======
+                        Toast.makeText(
+                            this@LoginHospitalActivity,
+                            e.message ?: "Credenciales incorrectas",
+                            Toast.LENGTH_LONG
+                        ).show()
+                        btnLogin.isEnabled = true
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
                     }
             }
         }
     }
+<<<<<<< HEAD
 
     private fun mostrarAyudaColegiado() {
         AlertDialog.Builder(this)
@@ -104,4 +149,6 @@ class LoginHospitalActivity : AppCompatActivity() {
             .setPositiveButton("Entendido") { dialog, _ -> dialog.dismiss() }
             .show()
     }
+=======
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
 }

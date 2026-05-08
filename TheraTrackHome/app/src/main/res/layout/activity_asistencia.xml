@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -150,4 +151,13 @@
         app:itemTextColor="@color/nav_item_color"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_nav_menu" />
+=======
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#F4F6F8">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Asistencia" android:textSize="18sp" android:textStyle="bold"/>
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
 </LinearLayout>

@@ -6,11 +6,17 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
+<<<<<<< HEAD
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.example.theratrackhome.controller.AuthController
 import com.example.theratrackhome.util.IdentificadorUtils
+=======
+import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
+import com.example.theratrackhome.controller.AuthController
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
 import com.google.android.material.textfield.TextInputEditText
 import kotlinx.coroutines.launch
 
@@ -23,6 +29,7 @@ class LoginActivity : AppCompatActivity() {
         val backButton     = findViewById<ImageView>(R.id.backButton)
         val loginButton    = findViewById<Button>(R.id.loginButton)
         val registerButton = findViewById<Button>(R.id.registerButton)
+<<<<<<< HEAD
         val etCipaOEmail   = findViewById<EditText>(R.id.email)
         val etPin          = findViewById<TextInputEditText>(R.id.password)
         val btnAyudaCipa   = findViewById<ImageView>(R.id.btnAyudaCipa)
@@ -82,14 +89,51 @@ class LoginActivity : AppCompatActivity() {
                                 loginButton.isEnabled = true
                             }
                         }
+=======
+        val emailField     = findViewById<EditText>(R.id.email)
+        val passwordField  = findViewById<TextInputEditText>(R.id.password)
+
+        // volver atrás
+        backButton.setOnClickListener { finish() }
+
+        // botón iniciar sesión
+        loginButton.setOnClickListener {
+            val email    = emailField.text.toString().trim()
+            val password = passwordField.text.toString()
+
+            if (email.isEmpty() || password.isEmpty()) {
+                Toast.makeText(this, "Introduce email y contraseña", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            loginButton.isEnabled = false
+            lifecycleScope.launch {
+                AuthController.login(email, password)
+                    .onSuccess {
+                        startActivity(Intent(this@LoginActivity, DashboardPacienteActivity::class.java))
+                        finish()
+                    }
+                    .onFailure { e ->
+                        Toast.makeText(
+                            this@LoginActivity,
+                            e.message ?: "Error al iniciar sesión",
+                            Toast.LENGTH_LONG
+                        ).show()
+                        loginButton.isEnabled = true
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
                     }
             }
         }
 
+<<<<<<< HEAD
+=======
+        // botón crear cuenta
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
         registerButton.setOnClickListener {
             startActivity(Intent(this, RegisterActivity::class.java))
         }
     }
+<<<<<<< HEAD
 
     private fun mostrarAyudaCipa() {
         val view = layoutInflater.inflate(R.layout.dialog_ayuda_cipa, null)
@@ -100,3 +144,6 @@ class LoginActivity : AppCompatActivity() {
             .show()
     }
 }
+=======
+}
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31

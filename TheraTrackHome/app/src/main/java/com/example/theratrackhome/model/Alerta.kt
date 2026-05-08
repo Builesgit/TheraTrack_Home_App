@@ -11,6 +11,9 @@ data class Alerta(
     val mensaje: String,
     val tipo: String = "info",
     val leida: Boolean = false,
+<<<<<<< HEAD
     @SerialName("registro_diario_id") val registroDiarioId: String? = null,
+=======
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
     @SerialName("created_at") val createdAt: String? = null
 )

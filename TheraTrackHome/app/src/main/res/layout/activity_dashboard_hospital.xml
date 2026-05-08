@@ -59,6 +59,7 @@
                     android:padding="6dp"/>
             </LinearLayout>
 
+<<<<<<< HEAD
             <!-- Solicitudes pendientes -->
             <LinearLayout
                 android:id="@+id/cardSolicitudesPendientes"
@@ -123,6 +124,8 @@
                     app:tint="@color/colorTextSecondary"/>
             </LinearLayout>
 
+=======
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
             <!-- Métricas 2x2 -->
             <GridLayout
                 android:layout_width="match_parent"

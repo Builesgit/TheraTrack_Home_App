@@ -84,11 +84,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+<<<<<<< HEAD
             android:text="Accede con tu número de colegiado o email profesional."
+=======
+            android:text="Accede con tus credenciales de profesional sanitario."
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
             android:textSize="14sp"
             android:textColor="@color/colorTextSecondary"
             android:layout_marginBottom="24dp"/>
 
+<<<<<<< HEAD
         <!-- Colegiado o Email con botón ayuda -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -113,22 +118,46 @@
                 android:src="@drawable/ic_help"
                 android:contentDescription="Ayuda número de colegiado"/>
         </LinearLayout>
+=======
+        <!-- Email -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email profesional"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginBottom="6dp"/>
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
 
         <EditText
             android:id="@+id/etEmail"
             android:layout_width="match_parent"
             android:layout_height="55dp"
+<<<<<<< HEAD
             android:hint="Ej: 281234567 o email"
             android:inputType="text"
+=======
+            android:hint="ejemplo@hospital.com"
+            android:inputType="textEmailAddress"
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
             android:padding="15dp"
             android:background="@drawable/bg_input"
             android:layout_marginBottom="14dp"/>
 
+<<<<<<< HEAD
         <!-- PIN -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="PIN de acceso"
+=======
+        <!-- Contraseña -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contraseña"
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
             android:textSize="14sp"
             android:textStyle="bold"
             android:textColor="@color/colorTextPrimary"
@@ -145,9 +174,14 @@
                 android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
+<<<<<<< HEAD
                 android:hint="Tu PIN de 6 dígitos"
                 android:inputType="numberPassword"
                 android:maxLength="6"
+=======
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
                 android:padding="15dp"
                 android:background="@drawable/bg_input"/>
         </com.google.android.material.textfield.TextInputLayout>
@@ -173,6 +207,7 @@
             android:gravity="center"
             android:layout_marginTop="20dp"/>
 
+<<<<<<< HEAD
         <TextView
             android:id="@+id/tvSolicitarAcceso"
             android:layout_width="match_parent"
@@ -184,5 +219,7 @@
             android:paddingTop="12dp"
             android:paddingBottom="8dp"/>
 
+=======
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
     </LinearLayout>
 </ScrollView>

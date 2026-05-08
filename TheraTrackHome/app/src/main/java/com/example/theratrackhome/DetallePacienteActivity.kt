@@ -86,7 +86,11 @@ class DetallePacienteActivity : AppCompatActivity() {
         tvFechaTratamiento.text = p.fechaTratamiento
         tvFechaAlta.text = p.fechaAlta
         tvDiasAislamiento.text = "${p.diasAislamiento} días"
+<<<<<<< HEAD
         tvNotas.text = p.notasClinicas?.takeIf { it.isNotBlank() } ?: "Sin notas registradas"
+=======
+        tvNotas.text = p.notasClinivas?.takeIf { it.isNotBlank() } ?: "Sin notas registradas"
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
 
         val dias = calcularDiasRestantes(p)
         tvDiasRestantesNum.text = dias.toString()

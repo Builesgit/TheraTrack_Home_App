@@ -25,6 +25,7 @@ object RegistroController {
         }.decodeList<RegistroDiario>()
     }
 
+<<<<<<< HEAD
     suspend fun obtenerRegistrosRango(pacienteId: String, desde: String, hasta: String): Result<List<RegistroDiario>> = runCatching {
         client.postgrest["registros_diarios"].select {
             filter {
@@ -35,6 +36,8 @@ object RegistroController {
         }.decodeList<RegistroDiario>().sortedBy { it.fecha }
     }
 
+=======
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
     suspend fun guardarRegistro(registro: RegistroDiario): Result<Unit> = runCatching {
         client.postgrest["registros_diarios"].insert(registro)
     }

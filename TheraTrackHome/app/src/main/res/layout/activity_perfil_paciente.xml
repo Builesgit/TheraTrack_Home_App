@@ -85,7 +85,11 @@
                                 android:layout_width="44dp"
                                 android:layout_height="44dp"
                                 android:src="@drawable/ic_nav_profile"
+<<<<<<< HEAD
                                 app:tint="@color/white"
+=======
+                                android:tint="@color/white"
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
                                 android:layout_gravity="center"/>
                         </FrameLayout>
 
@@ -102,7 +106,11 @@
                                 android:layout_width="15dp"
                                 android:layout_height="15dp"
                                 android:src="@drawable/ic_edit"
+<<<<<<< HEAD
                                 app:tint="@color/white"
+=======
+                                android:tint="@color/white"
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
                                 android:layout_gravity="center"/>
                         </FrameLayout>
                     </RelativeLayout>
@@ -171,7 +179,11 @@
                                 android:layout_width="24dp"
                                 android:layout_height="24dp"
                                 android:src="@drawable/ic_medical"
+<<<<<<< HEAD
                                 app:tint="@color/colorPrimary"
+=======
+                                android:tint="@color/colorPrimary"
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
                                 android:layout_gravity="center"/>
                         </FrameLayout>
 
@@ -298,7 +310,11 @@
                             android:layout_width="26dp"
                             android:layout_height="26dp"
                             android:src="@drawable/ic_shield"
+<<<<<<< HEAD
                             app:tint="@color/white"
+=======
+                            android:tint="@color/white"
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
                             android:layout_marginEnd="12dp"/>
 
                         <TextView
@@ -378,7 +394,11 @@
                             android:layout_width="22dp"
                             android:layout_height="22dp"
                             android:src="@drawable/ic_bell"
+<<<<<<< HEAD
                             app:tint="@color/colorPrimary"
+=======
+                            android:tint="@color/colorPrimary"
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
                             android:layout_marginEnd="16dp"/>
 
                         <TextView
@@ -393,7 +413,11 @@
                             android:layout_width="18dp"
                             android:layout_height="18dp"
                             android:src="@drawable/ic_arrow_right"
+<<<<<<< HEAD
                             app:tint="@color/colorTextSecondary"/>
+=======
+                            android:tint="@color/colorTextSecondary"/>
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
                     </LinearLayout>
 
                     <View android:layout_width="match_parent" android:layout_height="1dp"
@@ -416,7 +440,11 @@
                             android:layout_width="22dp"
                             android:layout_height="22dp"
                             android:src="@drawable/ic_globe"
+<<<<<<< HEAD
                             app:tint="@color/colorPrimary"
+=======
+                            android:tint="@color/colorPrimary"
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
                             android:layout_marginEnd="16dp"/>
 
                         <TextView
@@ -431,7 +459,11 @@
                             android:layout_width="18dp"
                             android:layout_height="18dp"
                             android:src="@drawable/ic_arrow_right"
+<<<<<<< HEAD
                             app:tint="@color/colorTextSecondary"/>
+=======
+                            android:tint="@color/colorTextSecondary"/>
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
                     </LinearLayout>
 
                     <View android:layout_width="match_parent" android:layout_height="1dp"
@@ -454,7 +486,11 @@
                             android:layout_width="22dp"
                             android:layout_height="22dp"
                             android:src="@drawable/ic_medical"
+<<<<<<< HEAD
                             app:tint="@color/colorPrimary"
+=======
+                            android:tint="@color/colorPrimary"
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
                             android:layout_marginEnd="16dp"/>
 
                         <TextView
@@ -469,7 +505,11 @@
                             android:layout_width="18dp"
                             android:layout_height="18dp"
                             android:src="@drawable/ic_arrow_right"
+<<<<<<< HEAD
                             app:tint="@color/colorTextSecondary"/>
+=======
+                            android:tint="@color/colorTextSecondary"/>
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
                     </LinearLayout>
 
                     <View android:layout_width="match_parent" android:layout_height="1dp"
@@ -492,7 +532,11 @@
                             android:layout_width="22dp"
                             android:layout_height="22dp"
                             android:src="@drawable/ic_logout"
+<<<<<<< HEAD
                             app:tint="@color/colorRedAlert"
+=======
+                            android:tint="@color/colorRedAlert"
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
                             android:layout_marginEnd="16dp"/>
 
                         <TextView

@@ -1,6 +1,7 @@
 package com.example.theratrackhome
 
 import android.os.Bundle
+<<<<<<< HEAD
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.ImageView
@@ -197,5 +198,13 @@ class AlertasActivity : AppCompatActivity() {
 
         sheet.setContentView(view)
         sheet.show()
+=======
+import androidx.appcompat.app.AppCompatActivity
+
+class AlertasActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_alertas)
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
     }
 }

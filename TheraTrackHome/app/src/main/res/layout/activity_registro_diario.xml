@@ -77,7 +77,11 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:src="@drawable/ic_nav_symptoms"
+<<<<<<< HEAD
                             app:tint="@color/white"
+=======
+                            android:tint="@color/white"
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
                             android:layout_gravity="center"/>
                     </FrameLayout>
 
@@ -136,7 +140,11 @@
                         android:layout_width="22dp"
                         android:layout_height="22dp"
                         android:src="@drawable/ic_nav_profile"
+<<<<<<< HEAD
                         app:tint="#F59E0B"
+=======
+                        android:tint="#F59E0B"
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
                         android:layout_gravity="center"/>
                 </FrameLayout>
 
@@ -180,7 +188,11 @@
                         android:layout_width="22dp"
                         android:layout_height="22dp"
                         android:src="@drawable/ic_drop"
+<<<<<<< HEAD
                         app:tint="@color/colorPrimary"
+=======
+                        android:tint="@color/colorPrimary"
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
                         android:layout_gravity="center"/>
                 </FrameLayout>
 
@@ -224,7 +236,11 @@
                         android:layout_width="22dp"
                         android:layout_height="22dp"
                         android:src="@drawable/ic_alert_white"
+<<<<<<< HEAD
                         app:tint="@color/colorRedAlert"
+=======
+                        android:tint="@color/colorRedAlert"
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
                         android:layout_gravity="center"/>
                 </FrameLayout>
 
@@ -268,7 +284,11 @@
                         android:layout_width="22dp"
                         android:layout_height="22dp"
                         android:src="@drawable/ic_bell"
+<<<<<<< HEAD
                         app:tint="@color/colorOrangeCaution"
+=======
+                        android:tint="@color/colorOrangeCaution"
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
                         android:layout_gravity="center"/>
                 </FrameLayout>
 
@@ -312,7 +332,11 @@
                         android:layout_width="22dp"
                         android:layout_height="22dp"
                         android:src="@drawable/ic_wind"
+<<<<<<< HEAD
                         app:tint="#8B5CF6"
+=======
+                        android:tint="#8B5CF6"
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
                         android:layout_gravity="center"/>
                 </FrameLayout>
 
@@ -356,7 +380,11 @@
                         android:layout_width="22dp"
                         android:layout_height="22dp"
                         android:src="@drawable/ic_check_white"
+<<<<<<< HEAD
                         app:tint="@color/colorGreenSafe"
+=======
+                        android:tint="@color/colorGreenSafe"
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
                         android:layout_gravity="center"/>
                 </FrameLayout>
 

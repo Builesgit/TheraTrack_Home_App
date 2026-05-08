@@ -1,5 +1,6 @@
 package com.example.theratrackhome
 
+<<<<<<< HEAD
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.net.Uri
@@ -157,5 +158,14 @@ class AsistenciaActivity : AppCompatActivity() {
                 else -> false
             }
         }
+=======
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+
+class AsistenciaActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_asistencia)
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
     }
 }

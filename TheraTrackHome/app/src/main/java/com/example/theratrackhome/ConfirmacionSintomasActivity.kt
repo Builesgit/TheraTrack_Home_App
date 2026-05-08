@@ -20,17 +20,27 @@ class ConfirmacionSintomasActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.tvFechaRegistro).text = hoy
 
         findViewById<MaterialButton>(R.id.btnVolverInicio).setOnClickListener {
+<<<<<<< HEAD
             val intent = Intent(this, PacienteMainActivity::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             intent.putExtra("fragment_inicial", "dashboard")
+=======
+            val intent = Intent(this, DashboardPacienteActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
             startActivity(intent)
             finish()
         }
 
         findViewById<TextView>(R.id.tvVerResumen).setOnClickListener {
+<<<<<<< HEAD
             val intent = Intent(this, PacienteMainActivity::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             intent.putExtra("fragment_inicial", "historial")
+=======
+            val intent = Intent(this, HistorialActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
             startActivity(intent)
             finish()
         }
@@ -39,6 +49,7 @@ class ConfirmacionSintomasActivity : AppCompatActivity() {
         bottomNav.menu.findItem(R.id.nav_sintomas)?.isChecked = true
         bottomNav.setOnItemSelectedListener { item ->
             when (item.itemId) {
+<<<<<<< HEAD
                 R.id.nav_inicio -> {
                     val i = Intent(this, PacienteMainActivity::class.java).apply {
                         flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
@@ -61,6 +72,12 @@ class ConfirmacionSintomasActivity : AppCompatActivity() {
                     }
                     startActivity(i); finish(); true
                 }
+=======
+                R.id.nav_inicio    -> { startActivity(Intent(this, DashboardPacienteActivity::class.java)); finish(); true }
+                R.id.nav_historial -> { startActivity(Intent(this, HistorialActivity::class.java)); finish(); true }
+                R.id.nav_sintomas  -> true
+                R.id.nav_perfil    -> { startActivity(Intent(this, PerfilPacienteActivity::class.java)); true }
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
                 else -> false
             }
         }

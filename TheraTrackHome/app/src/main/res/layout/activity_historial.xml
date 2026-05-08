@@ -252,7 +252,11 @@
                                 android:layout_width="18dp"
                                 android:layout_height="18dp"
                                 android:src="@drawable/ic_question"
+<<<<<<< HEAD
                                 app:tint="@color/white"
+=======
+                                android:tint="@color/white"
+>>>>>>> a73c1ab7e3afb368f22b6b676a1d3ee461c66f31
                                 android:layout_gravity="center"/>
                         </FrameLayout>
 
