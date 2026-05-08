@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/colorCardBg">
+
+    <!-- Drag handle -->
+    <View
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="#E5E7EB"/>
+
+    <!-- Header row: tipo + paciente ID -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:id="@+id/tvBsAlertaTipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="urgente"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorRedAlert"
+            android:background="@drawable/bg_badge_red"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvBsAlertaPaciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pac. xxxxxxxx"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextSecondary"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvBsAlertaTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Título alerta"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Mensaje completo -->
+    <TextView
+        android:id="@+id/tvBsAlertaMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mensaje detallado de la alerta."
+        android:textSize="14sp"
+        android:textColor="@color/colorTextSecondary"
+        android:lineSpacingExtra="4dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Fecha -->
+    <TextView
+        android:id="@+id/tvBsAlertaFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha: —"
+        android:textSize="12sp"
+        android:textColor="@color/colorTextSecondary"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Marcar como leída (oculto si ya está leída) -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnMarcarAlertaLeida"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Marcar como leída"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="12dp"
+        android:layout_marginBottom="8dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCerrarAlertaSheet"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Cerrar"
+        android:textColor="@color/colorTextSecondary"
+        style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+</LinearLayout>

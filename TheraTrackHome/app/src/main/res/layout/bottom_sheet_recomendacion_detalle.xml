@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/colorCardBg">
+
+    <!-- Drag handle -->
+    <View
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="#E5E7EB"/>
+
+    <!-- Tipo badge -->
+    <TextView
+        android:id="@+id/tvBsTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="general"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/bg_badge_blue"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvBsTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Título recomendación"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Descripción completa -->
+    <TextView
+        android:id="@+id/tvBsDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripción completa de la recomendación."
+        android:textSize="14sp"
+        android:textColor="@color/colorTextSecondary"
+        android:lineSpacingExtra="4dp"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Marcar como leída -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnMarcarLeida"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Marcar como leída"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="12dp"
+        android:layout_marginBottom="8dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCerrarSheet"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Cerrar"
+        android:textColor="@color/colorTextSecondary"
+        style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+</LinearLayout>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -51,9 +50,7 @@
                     android:textStyle="bold"
                     android:layout_marginStart="8dp"
                     android:textColor="#000"/>
-
             </LinearLayout>
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <ImageView
@@ -72,25 +69,59 @@
             android:layout_height="wrap_content"/>
 
         <TextView
-            android:text="Introduce tus datos para continuar."
+            android:text="Introduce tu CIPA o email para continuar."
             android:textColor="#7A7A7A"
             android:layout_marginBottom="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
+        <!-- CIPA o Email con botón ayuda -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="6dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CIPA o Email"
+                android:textStyle="bold"
+                android:textColor="#1A1A1A"/>
+
+            <ImageView
+                android:id="@+id/btnAyudaCipa"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_help"
+                android:contentDescription="Ayuda CIPA"/>
+        </LinearLayout>
+
         <EditText
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="55dp"
-            android:hint="ejemplo@correo.com"
-            android:inputType="textEmailAddress"
+            android:hint="Ej: 1724979086 o tu email"
+            android:inputType="text"
             android:padding="15dp"
             android:background="@drawable/bg_input"/>
+
+        <!-- PIN -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PIN de acceso"
+            android:textStyle="bold"
+            android:textColor="#1A1A1A"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="6dp"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="0dp"
             app:endIconMode="password_toggle"
             app:boxBackgroundMode="none">
 
@@ -98,33 +129,12 @@
                 android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
-                android:hint="Contraseña"
-                android:inputType="textPassword"
+                android:hint="Tu PIN de 6 dígitos"
+                android:inputType="numberPassword"
+                android:maxLength="6"
                 android:padding="15dp"
                 android:background="@drawable/bg_input"/>
-
         </com.google.android.material.textfield.TextInputLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp">
-
-            <CheckBox
-                android:id="@+id/remember"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Recordarme"
-                android:textColor="#666"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="¿Has olvidado tu contraseña?"
-                android:textColor="#1E5BB8"
-                android:layout_marginStart="40dp"/>
-        </LinearLayout>
 
         <Button
             android:id="@+id/loginButton"
@@ -154,5 +164,4 @@
             android:layout_marginTop="20dp"/>
 
     </LinearLayout>
-
 </ScrollView>

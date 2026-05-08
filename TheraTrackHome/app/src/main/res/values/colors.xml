@@ -2,4 +2,19 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Paleta TheraTrack -->
+    <color name="colorPrimary">#1A56DB</color>
+    <color name="colorBgLight">#F4F6F8</color>
+    <color name="colorBlueBg">#EBF0FA</color>
+    <color name="colorGreenSafe">#22C55E</color>
+    <color name="colorGreenBg">#DCFCE7</color>
+    <color name="colorOrangeCaution">#F59E0B</color>
+    <color name="colorOrangeBg">#FEF3C7</color>
+    <color name="colorRedAlert">#EF4444</color>
+    <color name="colorRedBg">#FEE2E2</color>
+    <color name="colorTextPrimary">#1F2937</color>
+    <color name="colorTextSecondary">#6B7280</color>
+    <color name="colorCardBg">#FFFFFF</color>
+    <color name="colorInnerCard">#F3F4F6</color>
 </resources>
